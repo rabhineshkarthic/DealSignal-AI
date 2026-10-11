@@ -25,16 +25,43 @@ is performed by the AI M&A Deal Team workflow; DealSignal AI is the product arou
 > are illustrative, and any memo conclusion is the output of a modelled IC process,
 > not financial advice.
 
-## Demo / Screenshots
+## Live Case Demo
 
-<!-- Screenshots to add: -->
-<!-- ![Deal Overview](docs/screenshots/deal-overview.png) -->
-<!-- ![IC Review revision cascade](docs/screenshots/ic-review.png) -->
-<!-- ![Architecture tab](docs/screenshots/architecture.png) -->
-<!-- ![Excel model](docs/screenshots/excel-model.png) -->
+### Hypothetical Accenture → EPAM Systems transaction
 
-*Screenshots coming soon. Launch the offline demo to explore the app.*
+![DealSignal AI Overview](ss/01_dealsignal_overview.png)
 
+This live case demonstrates the complete DealSignal AI workflow:
+
+**SEC EDGAR research → validated inputs → deterministic valuation → transaction mechanics → AI deal team → IC review → deal recommendation**
+
+The example uses a hypothetical acquisition of EPAM Systems, Inc. by Accenture plc to demonstrate the platform on real public-company financial data.
+
+> **Hypothetical transaction for demonstration purposes. Not an announced transaction and not investment advice.**
+
+### Public-company research and provenance
+
+![Public Company Research](ss/02_public_company_research.png)
+
+DealSignal AI separates reported, derived, market-data and user-approved values while preserving the original research source and reporting period.
+
+### Deterministic financial analysis
+
+![Financial Analysis](ss/04_financial_analysis.png)
+
+Valuation, DCF, transaction mechanics, synergy calculations and accretion/dilution are calculated deterministically in Python rather than by the LLM.
+
+### Investment Committee quality control
+
+![IC Review](ss/07_ic_review.png)
+
+The IC Partner reviews the analytical workstreams, preserves unresolved information gaps and can trigger targeted revisions rather than accepting AI output automatically.
+
+### Deal recommendation
+
+![Deal Recommendation](ss/08_deal_recommendation.png)
+
+The final recommendation is produced only after the analytical workflow reaches an approved IC state and the Investment Committee memo passes validation.
 ## Why I Built This
 
 LLMs are useful for judgment: interpreting results, spotting gaps, framing diligence
@@ -353,7 +380,7 @@ stage.
 pytest -q
 ```
 
-The suite has **1,086 tests** (one hygiene check runs only when a local Alpha Vantage key is configured). None needs network access or an API key: they use
+The suite has **1,133 tests** (one hygiene check runs only when a local Alpha Vantage key is configured). None needs network access or an API key: they use
 scripted fake LLMs and Streamlit's `AppTest` harness. They cover:
 - the finance engine;
 - the numeric validator;
