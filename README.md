@@ -20,10 +20,7 @@ DealSignal AI combines:
 A Streamlit app includes an offline demo that needs no API key. Internally, the analysis
 is performed by the AI M&A Deal Team workflow; DealSignal AI is the product around it.
 
-> ⚠️ **Fictional data. Not investment advice.** The sample deal, Northstar Software
-> acquiring Atlas Analytics, is invented. Both companies and every figure and assumption
-> are illustrative, and any memo conclusion is the output of a modelled IC process,
-> not financial advice.
+> **Offline sample disclaimer:** The Northstar Software → Atlas Analytics sample deal is entirely fictional. Both companies, financial figures, and assumptions in the offline demo are illustrative. The live public-company case shown below uses sourced public financial data but represents a hypothetical transaction. Nothing in this project is investment advice.
 
 ## Live Case Demo
 
@@ -304,6 +301,20 @@ MarketPriceProvider (separate from accounting facts)
 - Only **financial inputs** are researched. Strategy, customers, markets, legal, and
   news are **not**; they remain information gaps for the agents.
 
+## Data Lineage & Quality Controls
+
+DealSignal AI distinguishes between the value originally observed during research and the value ultimately approved for use in the transaction model.
+
+```text
+RAW RESEARCHED VALUE
+        ↓
+optional USER OVERRIDE
+        ↓
+EFFECTIVE DEAL VALUE
+        ↓
+deterministic finance
+        ↓
+AI analysis / IC review / memo / Excel
 ## Excel Output
 
 `excel_export.py` writes a formula-driven model with nine sheets: **IC Summary,
