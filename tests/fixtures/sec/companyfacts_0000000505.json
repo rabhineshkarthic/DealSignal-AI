@@ -1,0 +1,217 @@
+{
+ "cik": 505,
+ "entityName": "Sigma Cloud Data Inc",
+ "facts": {
+  "us-gaap": {
+   "Revenues": {
+    "label": "Revenue",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-02-01",
+       "end": "2026-01-31",
+       "val": 4600000000,
+       "accn": "0000000505-26-000004",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-03-20"
+      }
+     ]
+    }
+   },
+   "CashAndCashEquivalentsAtCarryingValue": {
+    "label": "Cash",
+    "units": {
+     "USD": [
+      {
+       "end": "2026-01-31",
+       "val": 2600000000,
+       "accn": "0000000505-26-000004",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-03-20"
+      },
+      {
+       "end": "2026-04-30",
+       "val": 2900000000,
+       "accn": "0000000505-26-000011",
+       "fy": 2026,
+       "fp": "Q1",
+       "form": "10-Q",
+       "filed": "2026-05-30"
+      }
+     ]
+    }
+   },
+   "ConvertibleNotesPayable": {
+    "label": "Convertible senior notes, net",
+    "units": {
+     "USD": [
+      {
+       "end": "2026-04-30",
+       "val": 2268000000,
+       "accn": "0000000505-26-000011",
+       "fy": 2026,
+       "fp": "Q1",
+       "form": "10-Q",
+       "filed": "2026-05-30"
+      }
+     ]
+    }
+   },
+   "ConvertibleDebtFairValueDisclosures": {
+    "label": "Convertible notes, fair value",
+    "units": {
+     "USD": [
+      {
+       "end": "2026-04-30",
+       "val": 2710000000,
+       "accn": "0000000505-26-000011",
+       "fy": 2026,
+       "fp": "Q1",
+       "form": "10-Q",
+       "filed": "2026-05-30"
+      }
+     ]
+    }
+   },
+   "DebtInstrumentFaceAmount": {
+    "label": "Principal amount",
+    "units": {
+     "USD": [
+      {
+       "end": "2026-04-30",
+       "val": 2300000000,
+       "accn": "0000000505-26-000011",
+       "fy": 2026,
+       "fp": "Q1",
+       "form": "10-Q",
+       "filed": "2026-05-30"
+      }
+     ]
+    }
+   },
+   "LongTermDebtFairValue": {
+    "label": "Long-term debt, fair value",
+    "units": {
+     "USD": [
+      {
+       "end": "2026-04-30",
+       "val": 2710000000,
+       "accn": "0000000505-26-000011",
+       "fy": 2026,
+       "fp": "Q1",
+       "form": "10-Q",
+       "filed": "2026-05-30"
+      }
+     ]
+    }
+   },
+   "OperatingIncomeLoss": {
+    "label": "Operating loss",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-02-01",
+       "end": "2026-01-31",
+       "val": -1300000000,
+       "accn": "0000000505-26-000004",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-03-20"
+      }
+     ]
+    }
+   },
+   "DepreciationDepletionAndAmortization": {
+    "label": "Depreciation and amortization",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-02-01",
+       "end": "2026-01-31",
+       "val": 290000000,
+       "accn": "0000000505-26-000004",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-03-20"
+      }
+     ]
+    }
+   },
+   "NetIncomeLoss": {
+    "label": "Net loss",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-02-01",
+       "end": "2026-01-31",
+       "val": -1290000000,
+       "accn": "0000000505-26-000004",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-03-20"
+      }
+     ]
+    }
+   },
+   "NetCashProvidedByUsedInOperatingActivities": {
+    "label": "Operating cash flow",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-02-01",
+       "end": "2026-01-31",
+       "val": 1000000000,
+       "accn": "0000000505-26-000004",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-03-20"
+      }
+     ]
+    }
+   },
+   "PaymentsToAcquirePropertyPlantAndEquipment": {
+    "label": "Capex",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-02-01",
+       "end": "2026-01-31",
+       "val": 90000000,
+       "accn": "0000000505-26-000004",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-03-20"
+      }
+     ]
+    }
+   }
+  },
+  "dei": {
+   "EntityCommonStockSharesOutstanding": {
+    "label": "Shares outstanding",
+    "units": {
+     "shares": [
+      {
+       "end": "2026-05-20",
+       "val": 334000000,
+       "accn": "0000000505-26-000011",
+       "fy": 2027,
+       "fp": "Q1",
+       "form": "10-Q",
+       "filed": "2026-05-30"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

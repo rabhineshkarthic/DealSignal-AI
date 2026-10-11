@@ -1,0 +1,446 @@
+{
+ "display": {
+  "synergy": {
+   "assumptions": {
+    "annual_cost_synergy": 6.0,
+    "annual_revenue_synergy_ebitda": 3.0,
+    "discount_rate": 0.1,
+    "integration_cost": 12.0,
+    "realization_years": 5,
+    "tax_rate": 0.25
+   },
+   "calculation": {
+    "annual_after_tax_synergies": 6.75,
+    "annual_cost_synergy": 6.0,
+    "annual_pre_tax_synergies": 9.0,
+    "annual_revenue_synergy_ebitda": 3.0,
+    "discount_rate": 0.1,
+    "discounted_synergies": [
+     6.1364,
+     5.5785,
+     5.0714,
+     4.6103,
+     4.1912
+    ],
+    "integration_cost": 12.0,
+    "net_synergy_value": 13.5878,
+    "pv_synergies": 25.5878,
+    "realization_years": 5,
+    "tax_rate": 0.25
+   },
+   "calculation_notes": {
+    "currency": "USD",
+    "display_rounding_decimals": 4,
+    "modelling_conventions": [
+     "Run-rate synergies are counted in full from year 1 (no ramp-up).",
+     "Synergies last only for the realization period; no terminal value.",
+     "Synergies are taxed at the supplied tax rate and discounted at year end.",
+     "Integration cost is a one-off cost at close, undiscounted and not tax-deductible."
+    ],
+    "source": "valuation.py calculate_synergy_value (deterministic Python)",
+    "units": "millions"
+   },
+   "labels": {
+    "integration_cost_vs_pv_synergies": "below",
+    "net_synergy_value_status": "positive"
+   }
+  },
+  "transaction_structure": {
+   "calculation": {
+    "accretion_dilution_excluding_synergies": {
+     "after_tax_interest_expense": 4.5788,
+     "annual_after_tax_synergies": 0.0,
+     "cash_consideration": 111.0,
+     "eps_change": 0.0125,
+     "eps_change_pct": 0.0174,
+     "new_debt": 111.0,
+     "new_shares_issued": 2.96,
+     "pre_tax_interest_expense": 6.105,
+     "pro_forma_eps": 0.7325,
+     "pro_forma_net_income": 75.4213,
+     "pro_forma_shares": 102.96,
+     "purchase_equity_value": 185.0,
+     "result": "Accretive",
+     "standalone_eps": 0.72,
+     "standalone_net_income": 72.0,
+     "standalone_shares": 100.0,
+     "stock_consideration": 74.0
+    },
+    "accretion_dilution_including_run_rate_synergies": {
+     "after_tax_interest_expense": 4.5788,
+     "annual_after_tax_synergies": 6.75,
+     "cash_consideration": 111.0,
+     "eps_change": 0.0781,
+     "eps_change_pct": 0.1085,
+     "new_debt": 111.0,
+     "new_shares_issued": 2.96,
+     "pre_tax_interest_expense": 6.105,
+     "pro_forma_eps": 0.7981,
+     "pro_forma_net_income": 82.1713,
+     "pro_forma_shares": 102.96,
+     "purchase_equity_value": 185.0,
+     "result": "Accretive",
+     "standalone_eps": 0.72,
+     "standalone_net_income": 72.0,
+     "standalone_shares": 100.0,
+     "stock_consideration": 74.0
+    },
+    "annual_after_tax_interest_expense": 4.5788,
+    "annual_pre_tax_interest_expense": 6.105,
+    "cash_consideration": 111.0,
+    "existing_acquirer_holders_ownership_of_pro_forma_shares": 0.9713,
+    "new_debt_under_financing_convention": 111.0,
+    "new_shares_issued": 2.96,
+    "offer_equity_value": 185.0,
+    "pro_forma_shares_outstanding": 102.96,
+    "seller_ownership_of_pro_forma_shares": 0.0287,
+    "stock_consideration": 74.0,
+    "target_net_debt": 20.0
+   },
+   "calculation_notes": {
+    "currency": "USD",
+    "display_rounding_decimals": 4,
+    "modelling_conventions": [
+     "Offer equity value is the offer enterprise value less target net debt.",
+     "FINANCING CONVENTION (existing model, not a confirmed financing plan): the cash portion of the equity purchase price is funded entirely with new acquisition debt at the supplied new-debt interest rate. No other financing source, cash on hand, or debt repayment is modelled.",
+     "Interest on the new debt is tax-deductible at the supplied transaction tax rate.",
+     "The stock portion is paid by issuing new acquirer shares at the supplied acquirer share price, with no issuance discount or fees.",
+     "The target's existing net debt is treated as assumed or refinanced at its current cost, already reflected in target net income.",
+     "Accretion/dilution is a single-year, run-rate EPS view: acquirer net income plus target net income less after-tax new-debt interest, plus annual after-tax synergies in the including-synergies case only.",
+     "The including-synergies case uses full run-rate annual after-tax synergies from calculate_synergy_value (no ramp-up, no integration cost).",
+     "Not modelled: transaction and financing fees, purchase price allocation, intangible amortization, working-capital or purchase-price adjustments, debt capacity, covenants, or credit rating effects.",
+     "Ownership values are decimals of pro forma shares outstanding."
+    ],
+    "share_units": "shares are in the same units as acquirer shares_outstanding",
+    "source": "valuation.py enterprise_to_equity_value, accretion_dilution, pro_forma_ownership, calculate_synergy_value (deterministic Python)",
+    "units": "millions"
+   },
+   "labels": {
+    "cash_percentage_vs_stock_percentage": "above",
+    "eps_impact_excluding_synergies": "Accretive",
+    "eps_impact_including_run_rate_synergies": "Accretive"
+   },
+   "transaction_terms": {
+    "acquirer_net_income": 72.0,
+    "acquirer_share_price": 25.0,
+    "acquirer_shares_outstanding": 100.0,
+    "cash_percentage": 0.6,
+    "new_debt_interest_rate": 0.055,
+    "offer_enterprise_value": 205.0,
+    "stock_percentage": 0.4,
+    "target_net_income": 8.0,
+    "tax_rate": 0.25
+   }
+  },
+  "valuation": {
+   "calculation_notes": {
+    "currency": "USD",
+    "display_rounding_decimals": 4,
+    "source": "valuation.py (deterministic Python)",
+    "units": "millions",
+    "value_basis": "All method values and the valuation range are ENTERPRISE values. Only transaction.offer_equity_value is an EQUITY value."
+   },
+   "comparable_company": {
+    "ebitda": 18.0,
+    "enterprise_value": 189.0,
+    "method": "Comparable Companies",
+    "multiple": 10.5
+   },
+   "dcf": {
+    "base_fcf": 10.0,
+    "discount_factors": [
+     0.9091,
+     0.8264,
+     0.7513,
+     0.683,
+     0.6209
+    ],
+    "discounted_fcfs": [
+     9.8182,
+     9.6397,
+     9.4644,
+     9.2923,
+     9.1234
+    ],
+    "discounted_terminal_value": 124.6861,
+    "enterprise_value": 172.024,
+    "forecast_fcfs": [
+     10.8,
+     11.664,
+     12.5971,
+     13.6049,
+     14.6933
+    ],
+    "forecast_years": 5,
+    "growth_rate": 0.08,
+    "method": "Discounted Cash Flow",
+    "pv_forecast_fcfs": 47.3379,
+    "terminal_growth_rate": 0.025,
+    "terminal_value": 200.8082,
+    "terminal_value_share_of_ev": 0.7248,
+    "wacc": 0.1,
+    "years": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "precedent_transaction": {
+    "ebitda": 18.0,
+    "enterprise_value": 216.0,
+    "method": "Precedent Transactions",
+    "multiple": 12.0
+   },
+   "target_net_debt": 20.0,
+   "transaction": {
+    "offer_enterprise_value": 205.0,
+    "offer_equity_value": 185.0,
+    "offer_vs_method": {
+     "Comparable Companies": "above",
+     "Discounted Cash Flow": "above",
+     "Precedent Transactions": "below"
+    },
+    "offer_vs_range": "within",
+    "target_net_debt": 20.0
+   },
+   "valuation_summary": {
+    "average": 192.3413,
+    "basis": "enterprise_value",
+    "by_method": {
+     "Comparable Companies": 189.0,
+     "Discounted Cash Flow": 172.024,
+     "Precedent Transactions": 216.0
+    },
+    "high": 216.0,
+    "high_method": "Precedent Transactions",
+    "low": 172.024,
+    "low_method": "Discounted Cash Flow",
+    "midpoint": 194.012
+   }
+  }
+ },
+ "full_precision": {
+  "synergy": {
+   "assumptions": {
+    "annual_cost_synergy": 6.0,
+    "annual_revenue_synergy_ebitda": 3.0,
+    "discount_rate": 0.1,
+    "integration_cost": 12.0,
+    "realization_years": 5,
+    "tax_rate": 0.25
+   },
+   "calculation": {
+    "annual_after_tax_synergies": 6.75,
+    "annual_cost_synergy": 6.0,
+    "annual_pre_tax_synergies": 9.0,
+    "annual_revenue_synergy_ebitda": 3.0,
+    "discount_rate": 0.1,
+    "discounted_synergies": [
+     6.136363636363636,
+     5.578512396694214,
+     5.071374906085649,
+     4.610340823714226,
+     4.191218930649296
+    ],
+    "integration_cost": 12.0,
+    "net_synergy_value": 13.58781069350702,
+    "pv_synergies": 25.58781069350702,
+    "realization_years": 5,
+    "tax_rate": 0.25
+   },
+   "calculation_notes": {
+    "currency": "USD",
+    "display_rounding_decimals": null,
+    "modelling_conventions": [
+     "Run-rate synergies are counted in full from year 1 (no ramp-up).",
+     "Synergies last only for the realization period; no terminal value.",
+     "Synergies are taxed at the supplied tax rate and discounted at year end.",
+     "Integration cost is a one-off cost at close, undiscounted and not tax-deductible."
+    ],
+    "source": "valuation.py calculate_synergy_value (deterministic Python)",
+    "units": "millions"
+   },
+   "labels": {
+    "integration_cost_vs_pv_synergies": "below",
+    "net_synergy_value_status": "positive"
+   }
+  },
+  "transaction_structure": {
+   "calculation": {
+    "accretion_dilution_excluding_synergies": {
+     "after_tax_interest_expense": 4.57875,
+     "annual_after_tax_synergies": 0.0,
+     "cash_consideration": 111.0,
+     "eps_change": 0.012529623154623248,
+     "eps_change_pct": 0.01740225438142118,
+     "new_debt": 111.0,
+     "new_shares_issued": 2.96,
+     "pre_tax_interest_expense": 6.105,
+     "pro_forma_eps": 0.7325296231546232,
+     "pro_forma_net_income": 75.42125,
+     "pro_forma_shares": 102.96,
+     "purchase_equity_value": 185.0,
+     "result": "Accretive",
+     "standalone_eps": 0.72,
+     "standalone_net_income": 72.0,
+     "standalone_shares": 100.0,
+     "stock_consideration": 74.0
+    },
+    "accretion_dilution_including_run_rate_synergies": {
+     "after_tax_interest_expense": 4.57875,
+     "annual_after_tax_synergies": 6.75,
+     "cash_consideration": 111.0,
+     "eps_change": 0.07808906371406377,
+     "eps_change_pct": 0.10845703293619968,
+     "new_debt": 111.0,
+     "new_shares_issued": 2.96,
+     "pre_tax_interest_expense": 6.105,
+     "pro_forma_eps": 0.7980890637140637,
+     "pro_forma_net_income": 82.17125,
+     "pro_forma_shares": 102.96,
+     "purchase_equity_value": 185.0,
+     "result": "Accretive",
+     "standalone_eps": 0.72,
+     "standalone_net_income": 72.0,
+     "standalone_shares": 100.0,
+     "stock_consideration": 74.0
+    },
+    "annual_after_tax_interest_expense": 4.57875,
+    "annual_pre_tax_interest_expense": 6.105,
+    "cash_consideration": 111.0,
+    "existing_acquirer_holders_ownership_of_pro_forma_shares": 0.9712509712509713,
+    "new_debt_under_financing_convention": 111.0,
+    "new_shares_issued": 2.96,
+    "offer_equity_value": 185.0,
+    "pro_forma_shares_outstanding": 102.96,
+    "seller_ownership_of_pro_forma_shares": 0.02874902874902875,
+    "stock_consideration": 74.0,
+    "target_net_debt": 20.0
+   },
+   "calculation_notes": {
+    "currency": "USD",
+    "display_rounding_decimals": null,
+    "modelling_conventions": [
+     "Offer equity value is the offer enterprise value less target net debt.",
+     "FINANCING CONVENTION (existing model, not a confirmed financing plan): the cash portion of the equity purchase price is funded entirely with new acquisition debt at the supplied new-debt interest rate. No other financing source, cash on hand, or debt repayment is modelled.",
+     "Interest on the new debt is tax-deductible at the supplied transaction tax rate.",
+     "The stock portion is paid by issuing new acquirer shares at the supplied acquirer share price, with no issuance discount or fees.",
+     "The target's existing net debt is treated as assumed or refinanced at its current cost, already reflected in target net income.",
+     "Accretion/dilution is a single-year, run-rate EPS view: acquirer net income plus target net income less after-tax new-debt interest, plus annual after-tax synergies in the including-synergies case only.",
+     "The including-synergies case uses full run-rate annual after-tax synergies from calculate_synergy_value (no ramp-up, no integration cost).",
+     "Not modelled: transaction and financing fees, purchase price allocation, intangible amortization, working-capital or purchase-price adjustments, debt capacity, covenants, or credit rating effects.",
+     "Ownership values are decimals of pro forma shares outstanding."
+    ],
+    "share_units": "shares are in the same units as acquirer shares_outstanding",
+    "source": "valuation.py enterprise_to_equity_value, accretion_dilution, pro_forma_ownership, calculate_synergy_value (deterministic Python)",
+    "units": "millions"
+   },
+   "labels": {
+    "cash_percentage_vs_stock_percentage": "above",
+    "eps_impact_excluding_synergies": "Accretive",
+    "eps_impact_including_run_rate_synergies": "Accretive"
+   },
+   "transaction_terms": {
+    "acquirer_net_income": 72.0,
+    "acquirer_share_price": 25.0,
+    "acquirer_shares_outstanding": 100.0,
+    "cash_percentage": 0.6,
+    "new_debt_interest_rate": 0.055,
+    "offer_enterprise_value": 205.0,
+    "stock_percentage": 0.4,
+    "target_net_income": 8.0,
+    "tax_rate": 0.25
+   }
+  },
+  "valuation": {
+   "calculation_notes": {
+    "currency": "USD",
+    "display_rounding_decimals": null,
+    "source": "valuation.py (deterministic Python)",
+    "units": "millions",
+    "value_basis": "All method values and the valuation range are ENTERPRISE values. Only transaction.offer_equity_value is an EQUITY value."
+   },
+   "comparable_company": {
+    "ebitda": 18.0,
+    "enterprise_value": 189.0,
+    "method": "Comparable Companies",
+    "multiple": 10.5
+   },
+   "dcf": {
+    "base_fcf": 10.0,
+    "discount_factors": [
+     0.9090909090909091,
+     0.8264462809917354,
+     0.7513148009015775,
+     0.6830134553650705,
+     0.6209213230591549
+    ],
+    "discounted_fcfs": [
+     9.818181818181818,
+     9.639669421487604,
+     9.464402704733281,
+     9.292322655556314,
+     9.1233713345462
+    ],
+    "discounted_terminal_value": 124.6860749054647,
+    "enterprise_value": 172.02402283996992,
+    "forecast_fcfs": [
+     10.8,
+     11.664000000000001,
+     12.597120000000002,
+     13.604889600000003,
+     14.693280768000005
+    ],
+    "forecast_years": 5,
+    "growth_rate": 0.08,
+    "method": "Discounted Cash Flow",
+    "pv_forecast_fcfs": 47.337947934505216,
+    "terminal_growth_rate": 0.025,
+    "terminal_value": 200.80817049600003,
+    "terminal_value_share_of_ev": 0.724817806530762,
+    "wacc": 0.1,
+    "years": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "precedent_transaction": {
+    "ebitda": 18.0,
+    "enterprise_value": 216.0,
+    "method": "Precedent Transactions",
+    "multiple": 12.0
+   },
+   "target_net_debt": 20.0,
+   "transaction": {
+    "offer_enterprise_value": 205.0,
+    "offer_equity_value": 185.0,
+    "offer_vs_method": {
+     "Comparable Companies": "above",
+     "Discounted Cash Flow": "above",
+     "Precedent Transactions": "below"
+    },
+    "offer_vs_range": "within",
+    "target_net_debt": 20.0
+   },
+   "valuation_summary": {
+    "average": 192.34134094665663,
+    "basis": "enterprise_value",
+    "by_method": {
+     "Comparable Companies": 189.0,
+     "Discounted Cash Flow": 172.02402283996992,
+     "Precedent Transactions": 216.0
+    },
+    "high": 216.0,
+    "high_method": "Precedent Transactions",
+    "low": 172.02402283996992,
+    "low_method": "Discounted Cash Flow",
+    "midpoint": 194.01201141998496
+   }
+  }
+ }
+}

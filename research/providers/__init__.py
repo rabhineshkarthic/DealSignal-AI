@@ -1,0 +1,1 @@
+"""Jurisdiction-specific CompanyResearchProvider implementations."""

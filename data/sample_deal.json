@@ -1,0 +1,50 @@
+{
+  "deal_name": "Northstar Software acquiring Atlas Analytics",
+  "disclaimer": "Entirely fictional and illustrative. Not based on any real company or transaction.",
+  "currency": "USD",
+  "units": "millions",
+  "acquirer": {
+    "name": "Northstar Software",
+    "revenue": 650.0,
+    "ebitda": 130.0,
+    "net_income": 72.0,
+    "cash": 80.0,
+    "debt": 120.0,
+    "shares_outstanding": 100.0,
+    "share_price": 25.0
+  },
+  "target": {
+    "name": "Atlas Analytics",
+    "revenue": 120.0,
+    "ebitda": 18.0,
+    "net_income": 8.0,
+    "free_cash_flow": 10.0,
+    "cash": 5.0,
+    "debt": 25.0
+  },
+  "market_data": {
+    "comparable_ev_ebitda_multiple": 10.5,
+    "precedent_ev_ebitda_multiple": 12.0
+  },
+  "dcf_assumptions": {
+    "forecast_years": 5,
+    "fcf_growth_rate": 0.08,
+    "wacc": 0.10,
+    "terminal_growth_rate": 0.025
+  },
+  "synergy_assumptions": {
+    "annual_cost_synergy": 6.0,
+    "annual_revenue_synergy_ebitda": 3.0,
+    "realization_years": 5,
+    "tax_rate": 0.25,
+    "discount_rate": 0.10,
+    "integration_cost": 12.0
+  },
+  "transaction_assumptions": {
+    "offer_enterprise_value": 205.0,
+    "cash_percentage": 0.60,
+    "stock_percentage": 0.40,
+    "new_debt_interest_rate": 0.055,
+    "tax_rate": 0.25
+  }
+}

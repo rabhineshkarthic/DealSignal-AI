@@ -1,0 +1,173 @@
+{
+ "cik": 202,
+ "entityName": "Beta Analytics Inc",
+ "facts": {
+  "us-gaap": {
+   "Revenues": {
+    "units": {
+     "USD": [
+      {
+       "start": "2024-01-01",
+       "end": "2024-12-31",
+       "val": 34857000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      },
+      {
+       "start": "2024-01-01",
+       "end": "2024-12-31",
+       "val": 34860000000,
+       "accn": "0000000202-25-000009",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K/A",
+       "filed": "2025-04-10"
+      }
+     ]
+    }
+   },
+   "NetIncomeLoss": {
+    "units": {
+     "USD": [
+      {
+       "start": "2024-01-01",
+       "end": "2024-12-31",
+       "val": 4136000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      }
+     ]
+    }
+   },
+   "OperatingIncomeLoss": {
+    "units": {
+     "USD": [
+      {
+       "start": "2024-01-01",
+       "end": "2024-12-31",
+       "val": 5011000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      }
+     ]
+    }
+   },
+   "DepreciationDepletionAndAmortization": {
+    "units": {
+     "USD": [
+      {
+       "start": "2023-01-01",
+       "end": "2023-12-31",
+       "val": 3900000000,
+       "accn": "0000000202-24-000005",
+       "fy": 2024,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2024-03-06"
+      }
+     ]
+    }
+   },
+   "NetCashProvidedByUsedInOperatingActivities": {
+    "units": {
+     "USD": [
+      {
+       "start": "2024-01-01",
+       "end": "2024-12-31",
+       "val": 10234000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      }
+     ]
+    }
+   },
+   "CashAndCashEquivalentsAtCarryingValue": {
+    "units": {
+     "USD": [
+      {
+       "end": "2024-12-31",
+       "val": 8848000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      }
+     ]
+    }
+   },
+   "DebtLongtermAndShorttermCombinedAmount": {
+    "units": {
+     "USD": [
+      {
+       "end": "2024-12-31",
+       "val": 9429000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      }
+     ]
+    }
+   },
+   "LongTermDebt": {
+    "units": {
+     "USD": [
+      {
+       "end": "2024-12-31",
+       "val": 8400000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      }
+     ]
+    }
+   },
+   "ShortTermBorrowings": {
+    "units": {
+     "USD": [
+      {
+       "end": "2024-12-31",
+       "val": 1029000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      }
+     ]
+    }
+   },
+   "CommonStockSharesOutstanding": {
+    "units": {
+     "shares": [
+      {
+       "end": "2024-12-31",
+       "val": 957000000,
+       "accn": "0000000202-25-000005",
+       "fy": 2025,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2025-03-05"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,3 @@
+DealSignal AI: M&A Decision Intelligence Platform (personal project)
+
+A consulting-style M&A decision-intelligence tool. It researches listed companies from SEC filings with field-level provenance, keeps sourced facts separate from user assumptions, and runs valuation, synergy, dilution and EPS analysis in deterministic Python. Nine specialist AI agents cover strategy, valuation, diligence, structuring and risk, and an AI IC Partner reviews their work and triggers targeted revisions. Every numeral the agents write is validated against sourced data. The outputs are an IC recommendation, an IC memo and a formula-checked Excel model. Demonstrated on a hypothetical Accenture → EPAM case (not investment advice).

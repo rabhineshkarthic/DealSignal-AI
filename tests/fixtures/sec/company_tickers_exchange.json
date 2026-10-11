@@ -1,0 +1,40 @@
+{
+ "fields": [
+  "cik",
+  "name",
+  "ticker",
+  "exchange"
+ ],
+ "data": [
+  [
+   101,
+   "ALPHA SOFTWARE CORP",
+   "ALPH",
+   "Nasdaq"
+  ],
+  [
+   202,
+   "BETA ANALYTICS INC",
+   "BETA",
+   "NYSE"
+  ],
+  [
+   303,
+   "ACME CLOUD CORP",
+   "ACMC",
+   "Nasdaq"
+  ],
+  [
+   304,
+   "ACME HOLDINGS INC",
+   "ACMH",
+   "NYSE"
+  ],
+  [
+   305,
+   "GAMMA DATA CORP",
+   "GAMD",
+   "NYSE"
+  ]
+ ]
+}

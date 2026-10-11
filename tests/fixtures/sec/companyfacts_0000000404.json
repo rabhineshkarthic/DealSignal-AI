@@ -1,0 +1,92 @@
+{
+ "cik": 404,
+ "entityName": "Omega Database Corp",
+ "facts": {
+  "us-gaap": {
+   "Revenues": {
+    "label": "Revenues",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-06-01",
+       "end": "2026-05-31",
+       "val": 67100000000,
+       "accn": "0000000404-26-000012",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-06-20"
+      }
+     ]
+    }
+   },
+   "OperatingIncomeLoss": {
+    "label": "Operating income",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-06-01",
+       "end": "2026-05-31",
+       "val": 21200000000,
+       "accn": "0000000404-26-000012",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-06-20"
+      }
+     ]
+    }
+   },
+   "Depreciation": {
+    "label": "Depreciation",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-06-01",
+       "end": "2026-05-31",
+       "val": 6400000000,
+       "accn": "0000000404-26-000012",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-06-20"
+      }
+     ]
+    }
+   },
+   "AmortizationOfIntangibleAssets": {
+    "label": "Amortization of intangible assets",
+    "units": {
+     "USD": [
+      {
+       "start": "2025-06-01",
+       "end": "2026-05-31",
+       "val": 2100000000,
+       "accn": "0000000404-26-000012",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-06-20"
+      }
+     ]
+    }
+   },
+   "CashAndCashEquivalentsAtCarryingValue": {
+    "label": "Cash",
+    "units": {
+     "USD": [
+      {
+       "end": "2026-05-31",
+       "val": 11000000000,
+       "accn": "0000000404-26-000012",
+       "fy": 2026,
+       "fp": "FY",
+       "form": "10-K",
+       "filed": "2026-06-20"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

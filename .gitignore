@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Secrets (never commit)
+.env
+.streamlit/secrets.toml
+
+# Local cache of raw research-provider responses
+.research_cache/
+
+# Generated workbooks: regenerate with `python export_sample_workbook.py`
+reports/*.xlsx
+!reports/.gitkeep
+
+# OS / editor
+.DS_Store

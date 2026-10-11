@@ -1,0 +1,14 @@
+# Visual theme only. Never put secrets here (use .env; .streamlit/secrets.toml is gitignored).
+[theme]
+base = "light"
+primaryColor = "#3157D5"
+backgroundColor = "#F7F8FA"
+secondaryBackgroundColor = "#EEF1F5"
+textColor = "#111827"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
